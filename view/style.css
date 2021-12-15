@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#search {
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%;
+}
+
+table {
+    text-align: left;
+    border-collapse: collapse;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+table a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+}
+
+th, td {
+    padding: 1rem;
+}
+
+th {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+
+tr:nth-child(odd) {background-color: lightsteelblue}
+
+#spinner {
+    height: 40px;
+    width: 40px;
+    margin: 3rem auto;
+    border-radius: 50%;
+    border: 3px solid white;
+    border-top-color: steelblue;
+    border-bottom-color: steelblue;
+    animation: spinner 1s ease-in-out infinite;
+}
+
+@keyframes spinner {
+    to { 
+        transform: rotate(360deg);
+    }
+}
